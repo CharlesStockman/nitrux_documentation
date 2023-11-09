@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script>src="js/bootstrap.js"</script>
+</head>
+<body>
+  <!-- Containers are the most basic layout element in bootstrap and are required when using our default grid system -->
+  <!-- Purpose: Contain, pad and sometimes center the text.  I am using container-fluid class since it provides a    -->
+  <!-- width of 100%.  General GUI advice is to use less than 100%, but this is for a notebook and I want as much    -->
+  <!-- information as possible                                                                                       -->
+  <div class="container">
+      <!-- <div class="mt-3 p-2 bg-primary text-white rounded">
+        <h1>Purpose</h1>
+        <p>
+          Wow... This distribution is definitely not a distribution that
+          I have been using in the past.  It contains: wayland, pipewire, an
+          an immutable os and OpenRc and more.<br><br>
+
+          The topics that I will cover will be
+          <ol>
+            <li>How to update the systems</li>
+            <li>How to install software</li>
+            <li>How to install different window managers</li>
+            <li>If the program is in the immutable OS then is fulfilled dependency</li>
+            <li>and Even more</li>
+          </ol>
+      </div> -->
+
+      <div class="card">
+          <div class="card-header">Installation</div>
+          <div class="card-body">
+                    <p>For the most part installation is self-explanatory.</p>
+
+                    <table class="table table-striped-columns">
+                        <thead>
+                        <tr>
+                            <th>Problem</th>
+                            <th>Solution</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Usually, only use 3 partitions ( UEFI, "/" and swap ) are used for a linux install
+                                    ( ex. Nitrux OS).  The result was no changes could be made to OS since it was
+                                    immutable OS and the whole partition was immutable.
+                                </td>
+                                <td>
+                                    Allow the installation to select the partitions, especially when learning Nitrux
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+          </div>
+      </div>
+
+      <div class="card">
+          <div class="card-header">Post Installation </div>
+          <div class="card-body">
+
+              <p>This section covers extra that I want to perform </p>
+              <table class="table table-striped-columns">
+                  <thead>
+                  <tr>
+                      <th>Problem</th>
+                      <th>Solution</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>
+                          The Wi-Fi password dialog -- KDE Daemon Dialog box is asking for the password.  How can this
+                          be made automatic ?
+                      </td>
+                      <td>
+                          <div class="alert alert-info" id="box1">
+                              Todo : Solve this problem
+                          </div>
+                      </td>
+                  </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+      <div class="card">
+          <div class="card-header">Post Installation </div>
+          <div class="card-body">
+
+              <p>Decisions made in Nitrux and why</p>
+              <table class="table table-striped-columns">
+                  <thead>
+                  <tr>
+                      <th>Design Choice</th>
+                      <th>Reason</th>
+                      <th>Notes</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                      <td>
+                         <p>Does not use Multi-Lib</p>
+                      </td>
+
+                      <td>
+                          <div class="alert alert-info" id="box3">
+                              Todo : Solve this problem
+                          </div>
+
+                      </td>
+                      <td>
+                          <div class="alert alert-info" id="box\4">
+                              Todo : Solve this problem
+                          </div>
+                      </td>
+                  </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+
+  </div>
+</body>
+</html>

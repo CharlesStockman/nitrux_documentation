@@ -1,0 +1,223 @@
+0desktop (1)                   Add programs to the desktop environment          
+0install (1)                   A decentralised software installation system     
+0launch (1)                    Download and run programs by url                 
+0store                         Secure-add (1) - add an implementation to the system cache
+0store (1)                     Manage the implementation cache                  
+7z (1)                         A file archiver with high compression ratio format
+7za (1)                        A file archiver with high compression ratio format
+7zr (1)                        A file archiver with high compression ratio format
+[ (1)                          Check file types and compare values              
+aa                             Features-abi (1)  - extract, validate and manipulate apparmor feature abis
+aconnect (1)                   Alsa sequencer connection manager                
+acpi_listen (8)                Acpi event listener                              
+acyclic (1)                    Make directed graph acyclic                      
+addpart (8)                    Tell the kernel about the existence of a partition
+addr2line (1)                  Convert addresses or symbol+offset into file names and line numbers
+aide (1)                       Advanced intrusion detection environment         
+akonadictl (1)                 Akonadi server manipulation tool                 
+alsabat (1)                    Command-line sound tester for alsa sound card driver
+alsaloop (1)                   Command-line pcm loopback                        
+alsamixer (1)                  Soundcard mixer for alsa soundcard driver, with ncurses interface
+alsatplg (1)                   Alsa topology compiler                           
+alsaucm (1)                    Alsa use case manager                            
+ambiguous_words (1)            Generate sets of words tesseract is likely to find ambiguous
+amidi (1)                      Read from and write to alsa rawmidi ports        
+amixer (1)                     Command-line mixer for alsa soundcard driver     
+aplay (1)                      Command-line sound recorder and player for alsa soundcard driver
+aplaymidi (1)                  Play standard midi files                         
+appres (1)                     List x application resource database             
+appstreamcli (1)               Handle appstream metadata formats and query appstream data
+apropos (1)                    Search the manual page names and descriptions    
+ar (1)                         Create, modify, and extract from archives        
+arch (1)                       Print machine hardware name (same as uname -m)   
+arecord (1)                    Command-line sound recorder and player for alsa soundcard driver
+arecordmidi (1)                Record standard midi files                       
+aria2c (1)                     The ultra fast download utility                  
+arm2hpdl (1)                   Add hp download header/trailer to an arm elf binary.
+as (1)                         The portable gnu assembler.                      
+aseqdump (1)                   Show the events received at an alsa sequencer port
+aseqnet (1)                    Alsa sequencer connectors over network           
+awk (1)                        Pattern scanning and processing language         
+axel (1)                       Light command line download accelerator          
+axfer (1)                      Command-line sound recorder and player for sound devices and nodes supported by linux sound subsystem (advanced linux sound architecture, also known as alsa).
+b2sum (1)                      Compute and check blake2 message digest          
+b43                            Fwcutter (1)     - utility for extracting broadcom 43xx firmware
+base32 (1)                     Base32 encode/decode data and print to standard output
+base64 (1)                     Base64 encode/decode data and print to standard output
+basename (1)                   Strip directory and suffix from filenames        
+basenc (1)                     Encode/decode data and print to standard output  
+bash (1)                       Gnu bourne-again shell                           
+bashbug (1)                    Report a bug in bash                             
+bc (1)                         An arbitrary precision calculator language       
+bcomps (1)                     Biconnected components filter for graphs         
+bdftopcf (1)                   Convert x font from bitmap distribution format to portable compiled format
+bdftruncate (1)                Generate truncated bdf font from iso 10646-1-encoded bdf font
+bluemoon (1)                   Bluemoon configuration utility                   
+bluetooth (1)                  Enable/disable internal bluetooth device         
+bluetoothctl (1)               Interactive bluetooth control tool               
+boltctl (1)                    Control the thunderbolt device manager           
+btattach (1)                   Attach serial devices to bluez stack             
+btmgmt (1)                     A command-line interface of bluez for management usage:
+btmon (1)                      Bluetooth monitor                                
+btrfs                          Select-super (8) - overwrite primary superblock with a backup copy
+btrfs (5)                      Topics about the btrfs filesystem (mount options, supported file attributes and other)
+btrfs (8)                      A toolbox to manage btrfs filesystems            
+btrfsck (8)                    Check or repair a btrfs filesystem               
+btrfstune (8)                  Tune various filesystem parameters               
+bunzip2 (1)                    A block-sorting file compressor, v1.0.8          
+busctl (1)                     Introspect the bus                               
+busybox (1)                    The swiss army knife of embedded linux           
+bwrap (1)                      Container setup utility                          
+bzcat (1)                      Decompresses files to stdout                     
+bzcmp (1)                      Compare bzip2 compressed files                   
+bzdiff (1)                     Compare bzip2 compressed files                   
+bzegrep (1)                    Search possibly bzip2 compressed files for a regular expression
+bzexe (1)                      Compress executable files in place               
+bzfgrep (1)                    Search possibly bzip2 compressed files for a regular expression
+bzgrep (1)                     Search possibly bzip2 compressed files for a regular expression
+bzip2 (1)                      A block-sorting file compressor, v1.0.8          
+bzip2recover (1)               Recovers data from damaged bzip2 files           
+bzless (1)                     File perusal filter for crt viewing of bzip2 compressed text
+bzmore (1)                     File perusal filter for crt viewing of bzip2 compressed text
+c++filt (1)                    Demangle c++ and java symbols                    
+c2050 (1)                      Ghostscript bitcymk to lexmark 2050 series protocol translator
+c89                            Gcc (1)          - ansi (1989) c compiler        
+c89 (1)                        Ansi (1989) c compiler                           
+c99                            Gcc (1)          - ansi (1999) c compiler        
+c99 (1)                        Ansi (1999) c compiler                           
+c_rehash (1ssl)                Create symbolic links to files named by the hash values
+cancel (1)                     Cancel jobs                                      
+captoinfo (1)                  Convert a termcap description into a terminfo description
+cat (1)                        Concatenate files and print on the standard output
+catman (8)                     Create or update the pre-formatted manual pages  
+ccomps (1)                     Connected components filter for graphs           
+cgroupfs                       Umount (8)  - set up cgroupfs mount hierarchies  
+chacl (1)                      Change the access control list of a file or directory
+chage (1)                      Change user password expiry information          
+chattr (1)                     Change file attributes on a linux file system    
+chcon (1)                      Change file security context                     
+check                          Language-support (1) - returns the list of missing packages in order to provide a complete language environment
+checkmodule (8)                Selinux policy module compiler                   
+checkpolicy (8)                Selinux policy compiler                          
+chfn (1)                       Change real user name and information            
+chgrp (1)                      Change group ownership                           
+chmod (1)                      Change file mode bits                            
+choom (1)                      Display and adjust oom-killer score.             
+chown (1)                      Change file owner and group                      
+chrt (1)                       Manipulate the real-time attributes of a process 
+chsh (1)                       Change login shell                               
+chvt (1)                       Change foreground virtual terminal               
+cifscreds (1)                  Manage ntlm credentials in kernel keyring        
+cifsdd (8)                     Convert and copy a file over smb                 
+ciptool (1)                    Bluetooth common isdn access profile (cip)       
+circo (1)                      Filter for circular layout of graphs             
+cjet (1)                       Converts hp pcl to canon capsl format            
+ckbcomp (1)                    Compile a xkb keyboard description to a keymap suitable for loadkeys or kbdcontrol
+cksum (1)                      Compute and verify file checksums                
+classifier_tester (1)          For *legacy tesseract* engine.                   
+clear (1)                      Clear the terminal screen                        
+clear_console (1)              Clear the console                                
+cluster (1)                    Find clusters in a graph and augment the graph with this information.
+cmp (1)                        Compare two files byte by byte                   
+cmp (1ssl)                     Openssl application commands                     
+cmus                           Remote (1)      - control cmus                   
+cmus (1)                       C* music player                                  
+cntraining (1)                 Character normalization training for tesseract   
+codepage (1)                   Extract a codepage from an msdos codepage file   
+col (1)                        Filter reverse line feeds from input             
+colcrt (1)                     Filter nroff output for crt previewing           
+colrm (1)                      Remove columns from a file                       
+column (1)                     Columnate lists                                  
+combine_lang_model (1)         Generate starter traineddata                     
+combine_tessdata (1)           Combine/extract/overwrite/list/compact tesseract data
+comm (1)                       Compare two sorted files line by line            
+compose (1)                    Execute programs via entries in the mailcap file 
+compose (5)                    X client mappings for multi-key input sequences  
+conmon (8)                     Container monitor utility                        
+containerd (8)                 (unknown subject)                                
+corelist (1)                   A commandline frontend to module::corelist       
+cp (1)                         Copy files and directories                       
+cpan (1)                       Easily interact with cpan from the command line  
+cpan5.36                       X86_64-linux-gnu (1) - easily interact with cpan from the command line
+cpio (1)                       Copy files to and from archives                  
+crontab (1)                    Maintain crontab files for individual users (vixie cron)
+crontab (5)                    Tables for driving cron                          
+cryfs                          Unmount (1)    - unmount a cryfs volume          
+cryfs (1)                      Cryptographic filesystem for the cloud           
+cryptmount (8)                 Mount/unmount/configure an encrypted filesystem  
+csplit (1)                     Split a file into sections determined by context lines
+ctr (8)                        (unknown subject)                                
+ctstat (8)                     Unified linux network statistics                 
+cups                           Calibrate (8)   - esp cups printer calibration tool
+cupstestppd (1)                Test conformance of ppd files (deprecated)       
+curl (1)                       Transfer a url                                   
+cut (1)                        Remove sections from each line of files          
+cvtsudoers (1)                 Convert between sudoers file formats             
+dash (1)                       Command interpreter (shell)                      
+date (1)                       Print or set the system date and time            
+dawg2wordlist (1)              Convert a tesseract dawg to a wordlist           
+dbus                           Uuidgen (1)     - utility to generate uuids      
+dbwrap_tool (1)                Low level tdb/ctdb manipulation tool using the dbwrap interface
+dbxtool (1)                    (unknown subject)                                
+dc (1)                         An arbitrary precision calculator                
+dd (1)                         Convert and copy a file                          
+ddstdecode (1)                 Decode a ricoh ddst stream into human readable form.
+deallocvt (1)                  Deallocate unused virtual consoles               
+deb                            Systemd-invoke (1p) - wrapper around systemctl, respecting policy-rc.d
+debconf                        Escape (1)   - helper when working with debconf's escape capability
+debconf (1)                    Run a debconf-using program                      
+delpart (8)                    Tell the kernel to forget about a partition      
+delv (1)                       Dns lookup and validation utility                
+desktop                        File-validate (1) - validate desktop entry files 
+df (1)                         Report file system space usage                   
+dh_girepository (1)            Compute dependencies for gobject introspection packages
+dh_installxmlcatalogs (1)      Install and register xml catalog files           
+dialog (1)                     Display dialog boxes from shell scripts          
+dialog (3)                     Widgets and utilities for the  program           
+diff (1)                       Compare files line by line                       
+diff3 (1)                      Compare three files line by line                 
+diffimg (1)                    Calculates intersection between two images       
+dig (1)                        Dns lookup utility                               
+dijkstra (1)                   Single-source distance filter for graphviz       
+dir (1)                        List directory contents                          
+dircolors (1)                  Color setup for ls                               
+dirmngr                        Client (1)   - tool to access the dirmngr services
+dirmngr (8)                    Gnupg's network access daemon                    
+dirname (1)                    Strip last component from file name              
+distrobox                      Upgrade (1) - (unknown subject)                  
+distrobox (1)                  (unknown subject)                                
+dmesg (1)                      Print or control the kernel ring buffer          
+dnsdomainname (1)              Show the system's dns domain name                
+dnstap                         Read (1)      - print dnstap data in human-readable form
+docker (1)                     Docker image and container command line interface
+domainname (1)                 Show or set the system's nis/yp domain name      
+dot (1)                        Filter for drawing directed graphs               
+dot2gxl (1)                    Gxl-gv converters                                
+dotlockfile (1)                Utility to manage lockfiles                      
+dotty (1)                      A customizable graph editor                      
+driverless (1)                 Ppd generator utility for driverless printing    
+du (1)                         Estimate file space usage                        
+dump_xsettings (1)             Prints x11 application settings from an xsettings provider
+dumpkeys (1)                   Dump keyboard translation tables                 
+dvipdf (1)                     Convert tex dvi file to pdf using ghostscript and dvips
+dwp (1)                        The dwarf packaging utility                      
+echo (1)                       Display a line of text                           
+edgepaint (1)                  Edge coloring to disambiguate crossing edges     
+edit (1)                       Execute programs via entries in the mailcap file 
+editres (1)                    A dynamic resource editor for x toolkit applications
+efibootdump (8)                Dump a boot entries from a variable or a file    
+efibootmgr (8)                 Manipulate the uefi boot manager                 
+egrep (1)                      Print lines that match patterns                  
+eject (1)                      Eject removable media                            
+elfedit (1)                    Update elf header and program property of elf files
+elogind                        Inhibit (1)  - execute a program with an inhibition lock taken
+enc2xs (1)                     - perl encode module generator                   
+encfs (1)                      Mounts or creates an encrypted virtual filesystem
+encfsctl (1)                   Administrative tool for working with encfs filesystems
+encfssh (1)                    Mount encrypted virtual filesystem and start shell
+encguess (1)                   Guess character encodings of files               
+env (1)                        Run a program in a modified environment          
+envsubst (1)                   Substitutes environment variables in shell format strings
+eps2eps (1)                    Ghostscript postscript "distiller"               
+eqn (1)                        Format mathematics (equations) for groff or mathml
+es2_info (1)                   List opengl+zf¢ù◊´°˘û≤∆†y∫ â¢∂◊ù∂ä%j∏
