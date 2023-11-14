@@ -1,3 +1,4 @@
+
 """
 """
 
@@ -15,7 +16,7 @@ class TestNitruxConfiguration(unittest.TestCase):
         self.driver.quit()
 
     def test_isFileWithCommandsPresent(self):
-        self.assertEqual(True, os.path.exists("../data"))
+        self.assertEqual(True, os.path.exists("data"))
 
     def test_isSeleniumInstalled(self):
         self.driver.get("https://www.google.com")
