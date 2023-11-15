@@ -23,7 +23,7 @@ def convert_line_to_name_and_summary_class(lines):
         #data = line.split("-")
         data = re.split(r'\(\d+[xslpma]*\)', line )
         print(data)
-        summary = re.sub(r"-\s+", '', data[1])
+        summary = re.sub(r"-\s+", '', data[1]).replace("\n","")
         print("*** ", summary)
         command_name_and_summary_list.append(CommandNameAndSummaryElement(data[0], summary))
 
