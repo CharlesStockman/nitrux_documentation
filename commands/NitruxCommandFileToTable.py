@@ -36,7 +36,7 @@ def to_json(command_name_and_summary):
 
 
 def to_html(json):
-    return pd.read_json(json).to_html()
+    return pd.read_json(json).to_html(index=False)
 
 
 def workflow(fileName):
