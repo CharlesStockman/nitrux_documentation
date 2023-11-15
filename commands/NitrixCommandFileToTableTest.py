@@ -59,7 +59,7 @@ class NitruxCommandFileToJSONTests(unittest.TestCase):
 
     @staticmethod
     def create_list():
-        line = {"aaa - bbb", "ccc - dddd"}
+        line = {"aaa (1)- bbb", "ccc (2)- dddd"}
         command_name_and_summary_list = NitruxCommandFileToTable.convert_line_to_name_and_summary_class(line)
         return command_name_and_summary_list
 

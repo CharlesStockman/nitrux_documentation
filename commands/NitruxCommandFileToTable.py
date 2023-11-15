@@ -3,6 +3,7 @@
 """
 import json
 import pandas as pd
+import re
 from dataclasses import dataclass, asdict
 
 
@@ -19,8 +20,12 @@ def convert_line_to_name_and_summary_class(lines):
     # to handle multiple statements easily without creating a functino which would
     command_name_and_summary_list = []
     for line in lines:
-        data = line.split("-")
-        command_name_and_summary_list.append(CommandNameAndSummaryElement(data[0], data[1]))
+        #data = line.split("-")
+        data = re.split(r'\(\d+[xslpma]*\)', line )
+        print(data)
+        summary = re.sub(r"-\s+", '', data[1])
+        print("*** ", summary)
+        command_name_and_summary_list.append(CommandNameAndSummaryElement(data[0], summary))
 
     return command_name_and_summary_list
 
