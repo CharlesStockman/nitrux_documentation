@@ -15,16 +15,14 @@ def read_lines_from_file(source_file):
 
 
 def convert_line_to_name_and_summary_class(lines):
+
     #
     # Coding note : Thought about map and list comprehension, but after study they do not seem
     # to handle multiple statements easily without creating a functino which would
     command_name_and_summary_list = []
     for line in lines:
-        #data = line.split("-")
         data = re.split(r'\(\d+[xslpma]*\)', line )
-        print(data)
         summary = re.sub(r"-\s+", '', data[1]).replace("\n","")
-        print("*** ", summary)
         command_name_and_summary_list.append(CommandNameAndSummaryElement(data[0], summary))
 
     return command_name_and_summary_list
@@ -34,15 +32,19 @@ def to_json(command_name_and_summary):
     dictionary = [asdict(instance) for instance in command_name_and_summary]
     return json.dumps(dictionary)
 
-
-def to_html(json):
-    return pd.read_json(json).to_html(index=False)
+def to_dataframe(json, sort=True):
+    name_and_summary_frame = pd.read_json(json)
+    if sort:
+        name_and_summary_frame = name_and_summary_frame.sort_values(by=['name'])
+    return name_and_summary_frame
+def to_html(dataFrame):
+    return dataFrame.to_html(index=False)
 
 
 def workflow(fileName):
     lines_from_file = read_lines_from_file(fileName)
     command_and_summary_list = convert_line_to_name_and_summary_class(lines_from_file)
-    return to_html(to_json(command_and_summary_list))
+    return to_html(to_dataframe(to_json(command_and_summary_list)))
 
 
 @dataclass

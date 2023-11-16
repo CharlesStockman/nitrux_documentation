@@ -30,7 +30,8 @@ class NitruxCommandFileToJSONTests(unittest.TestCase):
     def test_create_name_and_summary_html_document(self):
         command_name_and_summary_list = self.create_list()
         json = NitruxCommandFileToTable.to_json(command_name_and_summary_list)
-        html = NitruxCommandFileToTable.to_html(json)
+        dataframe = NitruxCommandFileToTable.to_dataframe(json)
+        html = dataframe.to_html()
 
         self.assertTrue(self.valid_html(html))
 
@@ -38,7 +39,7 @@ class NitruxCommandFileToJSONTests(unittest.TestCase):
         html = NitruxCommandFileToTable.workflow("data")
         self.assertTrue(self.valid_html(html))
 
-        with open("commands.html", "w") as file1:
+        with open("commands.html", "w+") as file1:
             file1.write(html)
 
     def test_workflow_with_invalid_filename(self):
