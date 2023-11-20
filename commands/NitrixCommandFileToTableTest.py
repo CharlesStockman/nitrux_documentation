@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 
 class NitruxCommandFileToJSONTests(unittest.TestCase):
 
+
     def test_CommandNamesAndSummaryList(self):
         command_name_and_summary_list = NitruxCommandFileToTable.read_lines_from_file("data")
         self.assertTrue(self, len(command_name_and_summary_list) > 0)
@@ -17,15 +18,22 @@ class NitruxCommandFileToJSONTests(unittest.TestCase):
     def test_lineToCommandNameAndSummaryClass(self):
         command_name_and_summary_list = self.create_list()
         self.assertTrue(len(command_name_and_summary_list) == 2)
-        self.assertTrue(command_name_and_summary_list[0].name, "aaa")
-        self.assertTrue(command_name_and_summary_list[0].summary, "bbb")
-        self.assertTrue(command_name_and_summary_list[1].name, "ccc")
-        self.assertTrue(command_name_and_summary_list[1].summary, "dddd")
+        self.assertTrue(command_name_and_summary_list[0].Name, "aaa")
+        self.assertTrue(command_name_and_summary_list[0].Summary, "bbb")
+        self.assertTrue(command_name_and_summary_list[1].Name, "ccc")
+        self.assertTrue(command_name_and_summary_list[1].Summary, "dddd")
 
-    def test_create_name_and_summary_json_document(self):
-        command_name_and_summary_list = self.create_list()
-        json = NitruxCommandFileToTable.to_json(command_name_and_summary_list)
-        self.valid_json(json)
+    def test_create_data_frame(self):
+        command_and_summary_list = self.create_list()
+        json = NitruxCommandFileToTable.to_json(command_and_summary_list)
+        dataFrame = NitruxCommandFileToTable.to_dataframe(json)
+
+        self.assertTrue(dataFrame.shape, (2,2))
+        self.assertEqual(dataFrame.columns.to_list(), ['Name', 'Summary'])
+        self.assertIn(dataFrame.iat[0,0], 'aaa')
+        self.assertTrue(dataFrame.iat[0,1] == 'bbb')
+        self.assertTrue(dataFrame.iat[1,0] == 'ccc')
+        self.assertTrue(dataFrame.iat[1,1] == 'dddd')
 
     def test_create_name_and_summary_html_document(self):
         command_name_and_summary_list = self.create_list()

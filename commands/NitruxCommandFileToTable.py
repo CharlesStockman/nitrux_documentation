@@ -23,10 +23,9 @@ def convert_line_to_name_and_summary_class(lines):
     for line in lines:
         data = re.split(r'\(\d+[xslpma]*\)', line )
         summary = re.sub(r"-\s+", '', data[1]).replace("\n","")
-        command_name_and_summary_list.append(CommandNameAndSummaryElement(data[0], summary))
+        command_name_and_summary_list.append(CommandNameAndSummaryElement(data[0].strip(), summary))
 
     return command_name_and_summary_list
-
 
 def to_json(command_name_and_summary):
     dictionary = [asdict(instance) for instance in command_name_and_summary]
@@ -35,8 +34,9 @@ def to_json(command_name_and_summary):
 def to_dataframe(json, sort=True):
     name_and_summary_frame = pd.read_json(json)
     if sort:
-        name_and_summary_frame = name_and_summary_frame.sort_values(by=['name'])
+        name_and_summary_frame = name_and_summary_frame.sort_values(by=['Name'])
     return name_and_summary_frame
+
 def to_html(dataFrame):
     return dataFrame.to_html(index=False)
 
@@ -50,5 +50,5 @@ def workflow(fileName):
 @dataclass
 class CommandNameAndSummaryElement:
     """ A container for the command name and summary """
-    name: str
-    summary: str
+    Name: str
+    Summary: str
