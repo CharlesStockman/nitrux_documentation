@@ -16,9 +16,6 @@ def read_lines_from_file(source_file):
 
 def convert_line_to_name_and_summary_class(lines):
 
-    #
-    # Coding note : Thought about map and list comprehension, but after study they do not seem
-    # to handle multiple statements easily without creating a functino which would
     command_name_and_summary_list = []
     for line in lines:
         data = re.split(r'\(\d+[xslpma]*\)', line )

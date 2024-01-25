@@ -131,6 +131,115 @@
           </div>
       </div>
 
+      <div id="nitrux-installing-software" class="card card-body">
+          <div id="introduction">
+              <p>The purpose of this section is to describe my ideas on the installing.  My first version will be
+                  presented is show in the following table </p>
+              <h3>Software Installation Overview</h3>
+              <table>
+                  <thead>
+                        <th>Type</th>
+                        <th>Notes</th>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Web Application</td>
+                          <td>These actual websites which will use .desktop with xsg-open to access</td>
+                      </tr>
+                      <tr>
+                          <td>Flat Paks</td>
+                          <td>
+                              <p> Reason to use flatpak </p>
+                              <ol>
+                                  <li>Applications</li>
+                                  <li>Software that has many requirements and many bytes without getting from a repository that I want to try out</li>
+                                  <li>Software that I may use one/twice a year or month</li>
+                              </ol>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>DistroBox or ToolBox</td>
+                          <td>
+                              <p>DistroBox -- to experiment with other distros</p>
+                              <p>ToolBox   -- to experiment with adding software it can can the following:</p>
+                              <ol>
+                                  <li>Home Directory</li>
+                                  <li>Wayland and X11 Sockets</li>
+                                  <li>networking</li>
+                                  <li>dbus</li>
+                                  <li>ssh</li>
+                              </ol>
+                          </td>
+                      </tr>
+                      <tr>
+                          <td>Nix</td>
+                          <td><p>Create a collection of software for development purposes that can used on any machine.</p></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          <div id="flatpak-use">
+              <h3>Installing flatpak</h3>
+              <p>The Good news is that flatpak is already installed</p>
+              <h4>Point to the Flathub Repo to get packages to install</h4>
+              <p><code>flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo --user</code></p>
+              <p>Documentation on the web is located at <a href="https://docs.flatpak.org/en/latest/using-flatpak.html" target="_blank">Documentation</a></p>
+              <h5>Workflow using Libreoffice as an example</h5>
+              <ol>
+                  <li><code>flatpak search libreoffice</code> -- retrieve the application id</li>
+                  <li><code>flatpak --assumeyes install org.libreoffice.LibreOffice --user</code></li>
+                  <li><code>flatpak run org.libreoffice.LibreOffice</code></li>
+              </ol>
+              <h5>Add as an Icon on the doc</h5>
+              <ol>
+                  <li>Run the program and it will show up in the dock as an icon</li>
+                  <li>Right Click on the icon and select &quotPin To Task Manager&quot</li>
+              </ol>
+          </div>
+
+          <div id="Nix Package Manager">
+              <h3>Install NixOS --   The command will download the binary to the $HOME and create an alias.</h3>
+              <div>Install:
+                  <ol>
+                      <li><code>sh <(curl -L https://nixos.org/nix/install) --no-daemon</code></li>
+                      <li><code>. /home/cstockman.nix-profile/etc/profile.d/nix.sh</code></li>
+                  </ol>
+              </div></div>
+          </div>
+      </div>
+
+      <div id="Research class=" class="card">
+          <div class="card-body">
+              <H3> Areas of further research</H3>
+              <ol class="list-group list-group-item" >
+                  <li class="list-group-item">I don't think this is possible, but can the kernel be replaced</li>
+                  <li class="list-group-item">How can github be added as a new Account</li>
+                  <li class="list-group-item">Is it possible to use libraries from Nitrux in a distribution on distrobox or nix</li>
+                  <li class="list-group-item">Look at TestCenter they seem to be able to do that</li>
+                  <li class="list-group-item">Can toolbox be used to install cuda or a linux where access to the level is needed</li>
+                  <li class="list-group-item">Comparison of building nix software vs gentoo</li>
+                  <li class="list-group-item">Experiment with fswatch and see if it can detect changes in configuration files for latte-dock</li>
+              </ol>
+          </div>
+      </div>
+
+      <div id="ExperimentSection">
+          <div id="Experiment1" class="card">
+              <div class="card-header">Experiment -- Using FSwatch to automate adding icons to the docker</div>
+              <div id="hypothesis" class="card-body">
+                  <h3>Hypothesis</h3>
+                  By using fsWatch the developer will be able to learn the location of the configuration files.
+              </div>
+              <div>
+                  <h3>Steps to reproduce</h3>
+                  <ol>
+                      <li>Install Nix Package Manager -- See </li>
+                      <li>Goto search.nixos.org and select fswatch to verify that it exist in t he repository</li>
+                  </ol>
+              </div>
+          </div>
+      </div>
+
   </div>
 </body>
 </html>
